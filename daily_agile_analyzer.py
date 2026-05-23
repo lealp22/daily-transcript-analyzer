@@ -66,7 +66,8 @@ def call_openrouter(api_key: str, model: str, prompt: str, transcript: str) -> s
                 ),
             },
         ],
-        "temperature": 0.2,
+        "temperature": 0.4,
+        "top_p": 0.8,
     }
 
     response = requests.post(
